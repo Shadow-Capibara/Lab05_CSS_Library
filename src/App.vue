@@ -35,10 +35,10 @@ if (route.query.pageSize) {
           <RouterLink class="font-bold text-gray-700" exact-active-class="text-green-500" :to="{ name: 'about' }">About</RouterLink>
           <RouterLink :to="{ name: 'Student' }">Student</RouterLink>
         </nav>
-        <div>
-          <label for="page-size">Event per page</label>
-          <select id="page-size" v-model="pageSize" @change="updatePageSize">
-            <option v-for="size in pageSizes" :key="size" :value="size">{{ size }}</option>
+        <div class="mt-4">
+          <label class="mr-2" for="page-size">Event per page</label>
+          <select class="mr-2" id="page-size" v-model="pageSize" @change="updatePageSize">
+            <option  class="text-gray-700 hover:text-green-500" exact-active-class="text-green-500" v-for="size in pageSizes" :key="size" :value="size">{{ size }}</option>
           </select>
         </div>
       </div>
