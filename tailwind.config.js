@@ -12,6 +12,13 @@ export default {
       fontFamily:{
         sans: ['Avenir','Helvetica','Arial','sans-serif'],
       },
+      //this is animation class 
+      keyframes:{
+        yellowFade:{
+          '0%': { backgroundColor: 'yellow' },
+          '100%': {backgroundColor: 'transparent'},
+        },
+      },
     },
   },
   plugins: [],
